@@ -10,7 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps.
       If you're not using Tailwind, you may delete the <script> -->
@@ -19,7 +18,35 @@
 
     <link rel="icon" href="img/favicon.ico" sizes="any" />
     <style>
-      /* You may write styles inside this <style> tag or within `css/style.css`. */
+      body {
+        margin: 0;
+        font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        min-height: 100vh;
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .credits {
+        color: #777;
+        position: fixed;
+        bottom: 24px;
+        left: 24px;
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .credits a {
+        color: #000;
+        font-weight: bold;
+      }
     </style>
   </head>
   <body class="flex items-center justify-center min-h-screen bg-gradient-to-r from-[#F9FAFB] to-[#D2D6DB] py-10">
